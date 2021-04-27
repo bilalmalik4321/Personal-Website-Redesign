@@ -1,18 +1,20 @@
 import React from 'react';
 import './App.css';
-import { Route, Switch, BrowserRouter as Router,Link } from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import { NavBar } from 'components/navBar/navBar';
+import { HomePage } from 'components/pages/homePage/homePage';
 
-function App() {
+const App: React.FC = () => {
+
   return (
     <Router>
+      <NavBar/>
       <Switch>
         <Route exact path="/">
-          Home
-          <Link to='/about-me'>go to about me</Link>
+          <HomePage/>
         </Route>
-        <Route exact path="/about-me">
+        <Route path="/about-me">
           About Me
-          <Link to='/'>go to home page</Link>
         </Route>
         <Route>
           404 Not Found

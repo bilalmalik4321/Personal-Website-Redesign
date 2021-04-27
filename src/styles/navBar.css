@@ -1,0 +1,41 @@
+.nav-bar-container {
+    display: flex;
+    justify-content: row;
+}
+
+.nav-bar-item {
+    display: flex;
+    justify-content: column;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    float: left;
+    padding: 4vh 2vw;
+  }
+
+  .nav-link {
+    text-decoration:none; 
+    color:#000000;
+  }
+
+  h2 {
+    display: inline;
+    display: block;
+    transition: 0.4s;
+  }
+
+  h2:hover {
+      color: #1e3ef5;
+      cursor: pointer;
+  }
+
+  .active {
+      background-color: #ebe9e9;
+  }
