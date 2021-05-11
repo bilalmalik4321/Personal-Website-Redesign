@@ -1,3 +1,11 @@
+/*
+* Author: Bilal Malik
+* Date: May, 10th, 2021
+* Last Modified on: May, 10th, 2021
+* Description: This component renders the Nav bar items, a reusable components that takes the name
+* of the nav bar item, and the route to where it will go
+ */
+
 import { Link } from "react-router-dom";
 
 interface PropType {
