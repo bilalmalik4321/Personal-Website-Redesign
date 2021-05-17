@@ -8,9 +8,10 @@
 import { ReactComponent as Hamburger } from "images/hamburger.svg";
 import { ReactComponent as Close } from "images/close.svg";
 import { useNavBarContext } from "../navBarContext";
+import { NavBarModal } from "./navBarModal";
 import "styles/navBarMobile.css";
 
-export const NavBarMobile = () => {
+export const NavBarMobile: React.FC = () => {
     
     const {hamburgerOpen, setHamburgerOpen} = useNavBarContext();
     
@@ -27,6 +28,11 @@ export const NavBarMobile = () => {
                     )
                 }
             </li>
+            { hamburgerOpen && 
+            <div className="modal-component-class">
+                <NavBarModal/>
+            </div>
+            }
         </ul>
     );
 }

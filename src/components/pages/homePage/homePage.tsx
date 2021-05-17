@@ -5,9 +5,15 @@
 * Description: This component renders the Home page, seen when entering the app on route '/'
  */
 
-import { useWindowSize } from "useWindowSize";
+import { Header } from "./header";
+import { HeaderProjects } from "./homeProjects/homeProjects";
+import '../../../styles/homePage.css';
 
-export const HomePage = () => {
-    const {width}=useWindowSize();
-    return (<>Home {width}</>);
+export const HomePage: React.FC  = () => {
+    return (
+        <>
+            <Header/>
+            <HeaderProjects/>
+        </>
+    );
 }

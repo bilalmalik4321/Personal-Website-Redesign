@@ -6,3 +6,19 @@
 .close-padding {
     padding-top: 2.5vh;
 }
+
+.modal-component-class {
+    position: absolute;
+}
+
+.modal-container {
+    border-radius: 8px;
+    /* margin-top: 120px; */
+    margin-left: 55vw;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 6px;
+    padding-left: 6px;
+    background-color: grey;
+}

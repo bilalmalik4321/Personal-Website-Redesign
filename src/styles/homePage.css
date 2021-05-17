@@ -1,0 +1,27 @@
+.header-wrapper{
+    background-color: #ff6666;
+    height: 80.75vh;
+    padding-top: 4vh;
+}
+
+.home-text-wrapper {
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.heading-small {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.position-heading {
+    color: burlywood;
+}
+
+.name-heading {
+    font-weight: bold;
+    font-size: 90px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+

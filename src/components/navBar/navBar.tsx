@@ -11,10 +11,13 @@ import { useWindowSize } from 'useWindowSize';
 import { NavBarMobile } from './navBarMobile/navBarMobile';
 import "styles/navBar.css";
 
-export const NavBar = () => {
+export const NavBar: React.FC = () => {
     const navBarItems = [
         {itemName:'Home', itemRoute:'/'},
-        {itemName:'About', itemRoute:'/about-me'}
+        {itemName:'About Me', itemRoute:'/about-me'},
+        {itemName:'Experience', itemRoute:'/about-me'},
+        {itemName:'Projects', itemRoute:'/about-me'},
+        {itemName:'Resume', itemRoute:'/about-me'}
     ];
 
     const {width}=useWindowSize();
