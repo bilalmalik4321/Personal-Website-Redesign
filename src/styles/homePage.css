@@ -1,7 +1,7 @@
 .header-wrapper{
     background-color: #ff6666;
-    height: 80.75vh;
-    padding-top: 4vh;
+    height: 96vh;
+    padding-top: 18vh;
 }
 
 .home-text-wrapper {
@@ -24,4 +24,35 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
+
+.project-home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+.project-home-box {
+    background-color: grey;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
+}
+
+.check-out-project {
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 18px;
+    font-weight: bold;
+    width: 15vh;
+    cursor: pointer;
+}
+
 

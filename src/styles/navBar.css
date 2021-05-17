@@ -1,4 +1,9 @@
 .nav-bar-container {
+  /* make navbar stickey */
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  /* place content inside navbar */
   display: flex;
   justify-content: space-around;
 }
