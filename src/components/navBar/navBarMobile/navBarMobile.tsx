@@ -17,7 +17,7 @@ export const NavBarMobile: React.FC = () => {
     
     return(
         <ul className="nav-bar-container">
-            <li>
+            <li className="mobile-nav-link">
                 <h2>Bilal Malik</h2>
             </li>
             <li>

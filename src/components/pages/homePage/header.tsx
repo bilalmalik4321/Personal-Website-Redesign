@@ -5,7 +5,7 @@
 * Description: This component renders the Home page, seen when entering the app on route '/'
  */
 
-import { ReactComponent as DownArrow } from "../../../images/down-arrow.svg";
+import { ReactComponent as DownArrow } from "images/down-arrow.svg";
 
 export const Header: React.FC  = () => {
     return (
@@ -14,7 +14,9 @@ export const Header: React.FC  = () => {
                 <div className="heading-small position-heading">Full Stack Developer</div>
                 <div className="name-heading">Bilal Malik</div>
                 <div className="heading-small">Previously @ WSIB Innovation Lab</div>
-                <DownArrow style={{height:82, paddingTop: "2vh"}}/>
+                <div style={{cursor:"pointer"}}>
+                    <DownArrow style={{height:82, paddingTop: "2vh"}} onClick={()=>window.scroll({top:950})}/>
+                </div>
             </div>
         </div>
     );

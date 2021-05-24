@@ -15,7 +15,7 @@ export const NavBar: React.FC = () => {
     const navBarItems = [
         {itemName:'Home', itemRoute:'/'},
         {itemName:'About Me', itemRoute:'/about-me'},
-        {itemName:'Experience', itemRoute:'/about-me'},
+        {itemName:'Experience', itemRoute:'/experience'},
         {itemName:'Projects', itemRoute:'/about-me'},
         {itemName:'Resume', itemRoute:'/about-me'}
     ];

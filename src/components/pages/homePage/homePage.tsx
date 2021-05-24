@@ -7,7 +7,7 @@
 
 import { Header } from "./header";
 import { HeaderProjects } from "./homeProjects/homeProjects";
-import '../../../styles/homePage.css';
+import 'styles/homePage.css';
 
 export const HomePage: React.FC  = () => {
     return (

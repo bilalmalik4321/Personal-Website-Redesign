@@ -16,7 +16,7 @@ interface PropType {
 export const NavBarItem = ({itemName,itemRoute}:PropType) => (
     <li>
         <Link className="nav-link" to={itemRoute}>
-            <h2>{itemName}</h2>
+            <h2 className="nav-item">{itemName}</h2>
         </Link>
     </li>
 );

@@ -5,7 +5,9 @@
   background-color: white;
   /* place content inside navbar */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  /* border-bottom: 5px solid grey; */
+  box-shadow: 0 3px 9px rgba(0,0,0,0.3);
 }
 
 .nav-bar-item {
@@ -30,13 +32,13 @@ ul {
     color:#000000;
   }
 
-  h2 {
+  .nav-item {
     display: inline;
     display: block;
     transition: 0.4s;
   }
 
-  h2:hover {
+  .nav-item:hover {
       color: #1e3ef5;
       cursor: pointer;
   }
