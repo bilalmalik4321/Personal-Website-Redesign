@@ -34,7 +34,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 
-export const Experience:React.FC =()=> {
+export const Experience:React.FC = () => {
   const classes = useStyles();
 
   return (
@@ -73,7 +73,7 @@ export const Experience:React.FC =()=> {
                 <TimelineDot color="inherit">
                     <img src={winHacks} width="52" height="52" style={{borderRadius:12}} alt="WinHacks Logo"/>
                 </TimelineDot>
-                <TimelineConnector />
+                <TimelineConnector/>
                 </TimelineSeparator>
                 <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>

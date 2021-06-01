@@ -14,7 +14,7 @@ export const AboutContent: React.FC  = () => {
     return (
         <div className={`${width>750 ? "about-content-container":"about-content-container-mobile"}`}>
             <h1>
-                Hi, I'm Bilal. A <span className="about-position-text">Full Stack Developer</span> and student at the University of Windsor, for Honours Computer Science.
+                Hi, I'm Bilal. A <span className="about-position-text">Full Stack Developer</span> and student at the University of Windsor, enrolled in the Honours Computer Science program.
             </h1>
             <h1>
                 I started my development journey over <span className="about-secondary-text">3 years ago</span>, in September 2018.
@@ -26,7 +26,7 @@ export const AboutContent: React.FC  = () => {
                 I've finished up my latest internship for 12 months at the <span className="about-position-text">WSIB Innovation Lab</span> as a Full Stack Developer.
             </h1>
             <h1>
-                In my freetime, I play basketball, football, and baseball.
+                I love competition. In my freetime, I play basketball 🏀, football 🏈, baseball ⚾️, and videogames 🎮.
             </h1>
         </div>
     );

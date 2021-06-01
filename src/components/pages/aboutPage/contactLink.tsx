@@ -8,18 +8,15 @@
 interface ContactLinkPropType {
     title:string,
     icon:any,//TODO: close in type
-    link:string|undefined,
+    link:string,
     color: string,
     secondaryColor: string,
     tertiaryColor: string
 }
 
-export const ContactLink: React.FC<ContactLinkPropType>  = (props) => {
-    
-    return (
-       <a href={props.link} target="_blank" className="contact-link">
-           <div style={{display:"inline-block"}}>{props.icon}</div>
-           <h3 style={{display:"inline-block"}}>{props.title}</h3>
-        </a>
-    );
-}
+export const ContactLink: React.FC<ContactLinkPropType>  = (props) =>  (
+    <a href={props.link} className={`contact-link ${props.secondaryColor}`}>
+        <div className="link-icon-container">{props.icon}</div>
+        <h3 style={{display:"inline-block"}} className={`link-title-container ${props.color}`}>{props.title}</h3>
+    </a>
+)

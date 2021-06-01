@@ -14,35 +14,28 @@ export const ContactMe: React.FC  = () => {
 
     const contactLinks = [
         {
-            title: "My Linkedin",
-            icon: <Linkedin height="40" width="40"/>,
-            link:"https://www.linkedin.com/in/bilal-malik97/",
-            color: "linkedinPrimary",
-            secondaryColor: "linkedinSecondary",
-            tertiaryColor: "linkedinTertiary"
-        },
-        {
-            title: "My Email",
-            icon: <EmailIcon style={{color:"purple", fontSize:40}}/>,
-            color: "emailPrimary",
-            secondaryColor: "emailSecondary",
-            tertiaryColor: "emailTertiary"
-        },
-        {
             title: "My Github",
             icon: <Github height="40" width="40"/>,
             link:"https://github.com/bilalmalik4321",
-            color: "githubPrimary",
-            secondaryColor: "githubSecondary",
+            color: "github-primary",
+            secondaryColor: "github-secondary",
             tertiaryColor: "githubTertiary"
         },
         {
             title: "My Linkedin",
             icon: <Linkedin height="40" width="40"/>,
             link:"https://www.linkedin.com/in/bilal-malik97/",
-            color: "linkedinPrimary",
-            secondaryColor: "linkedinSecondary",
+            color: "linkedin-primary",
+            secondaryColor: "linkedin-secondary",
             tertiaryColor: "linkedinTertiary"
+        },
+        {
+            title: "My Email",
+            icon: <EmailIcon style={{color:"#8600b3", fontSize:40}}/>,
+            link: "mailto:bilalmalik4321@egmail.com",
+            color: "email-primary",
+            secondaryColor: "email-secondary",
+            tertiaryColor: "emailTertiary"
         }
     ];
     
