@@ -11,20 +11,41 @@
 
 .modal-component-class {
     position: absolute;
+    margin-top: 9vh;
+    right: 0;
+}
+
+.right-position {
+    right: 0;
 }
 
 .modal-container {
     border-radius: 8px;
     /* margin-top: 120px; */
-    margin-left: 55vw;
-
+    margin-right: 6vw;
+    margin-top: 40px;
+    margin-left: 500px;
+    
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-right: 6px;
-    padding-left: 6px;
-    background-color: grey;
+    padding-right: 16px;
+    padding-left: 16px;
+    background-color: #e6e6e6;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.mobile-nav-link {
+.mobile-nav-link-container {
     padding: 4vh 8vw;
   }
+
+  .mobile-nav-link {
+    color: #000;
+}
+
+  .mobile-nav-link:hover {
+    color: #1e3ef5;
+    cursor: pointer;
+}
