@@ -7,14 +7,14 @@
 
 import { ReactComponent as Hamburger } from "images/hamburger.svg";
 import { ReactComponent as Close } from "images/close.svg";
-import { useNavBarContext } from "../navBarContext";
+import { useAppContext } from "appContext";
 import { NavBarModal } from "./navBarModal";
 import "styles/navBarMobile.css";
 import { Link } from "react-router-dom";
 
 export const NavBarMobile: React.FC = () => {
     
-    const {hamburgerOpen, setHamburgerOpen} = useNavBarContext();
+    const {hamburgerOpen, setHamburgerOpen} = useAppContext();
     
     return(
         <ul className="nav-bar-container">

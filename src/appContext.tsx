@@ -1,20 +1,20 @@
 import React, { createContext, useContext, useState } from 'react';
 
-type NavBarContent = {
+type AppContent = {
     hamburgerOpen: boolean
     setHamburgerOpen:(c: boolean) => void
   }
 
-const NavBarContextProvider = createContext<NavBarContent>({
+const AppContextProvider = createContext<AppContent>({
     hamburgerOpen: false, // set a default value
     setHamburgerOpen: () => {},
 })
 
-export const useNavBarContext = ()=>useContext(NavBarContextProvider);
+export const useAppContext = ()=>useContext(AppContextProvider);
 
 export const NavBarContext = (props:React.HTMLAttributes<any>) => {
 
     const [hamburgerOpen, setHamburgerOpen] = useState<boolean>(false);
 
-    return(<NavBarContextProvider.Provider value={{hamburgerOpen,setHamburgerOpen}}>{props.children}</NavBarContextProvider.Provider>);
+    return(<AppContextProvider.Provider value={{hamburgerOpen,setHamburgerOpen}}>{props.children}</AppContextProvider.Provider>);
 }

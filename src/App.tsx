@@ -8,7 +8,7 @@
 
 import React from 'react';
 import './App.css';
-import { NavBarContext } from 'components/navBar/navBarContext';
+import { NavBarContext } from 'appContext';
 import { Routing } from 'components/routing/routing';
 
 const App: React.FC = () => {

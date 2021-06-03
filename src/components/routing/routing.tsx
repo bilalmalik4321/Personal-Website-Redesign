@@ -13,11 +13,11 @@ import { HomePage } from 'components/pages/homePage/homePage';
 import { AboutPage } from 'components/pages/aboutPage/aboutPage';
 import { Footer } from 'footer';
 import { Experience } from 'components/experience/experience';
-import { useNavBarContext } from 'components/navBar/navBarContext';
+import { useAppContext } from 'appContext';
 
 export const Routing: React.FC = () => {
 
-const {hamburgerOpen, setHamburgerOpen} = useNavBarContext();
+const {hamburgerOpen, setHamburgerOpen} = useAppContext();
 
   return (
       <div className="app-container" onClick={()=>{
