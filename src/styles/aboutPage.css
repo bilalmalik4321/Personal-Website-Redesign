@@ -5,6 +5,13 @@
     padding-right: 2.25vw;
 }
 
+.about-container-desktop {
+    padding-top: 18vh;
+
+    padding-left: 8.25vw;
+    padding-right: 8.25vw;
+}
+
 .headshot-container {
     display: flex;
     flex-direction: row;
@@ -17,19 +24,20 @@
 
 .about-content-container {
     text-align: center;
-    height: 1200px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 32px;
     padding-top: 6vh;
 }
 
-.about-content-container-mobile {
-    padding-left: 7.5vw;
-    padding-right: 7.5vw;
+.about-content-container-desktop {
     text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 6vh;
 }
 
 .about-position-text {
@@ -44,6 +52,12 @@
     padding-top: 18vh;
 }
 
+.contact-me-desktop-row {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .contact-link-container {
     display: flex;
     padding: 12px;
@@ -53,7 +67,6 @@
     /* display: block; */
     margin-left: auto;
     margin-right: auto;
-    background-color: orange;
     /* seperate for mobile and desktop */
     width: 60vw;
     border-radius: 12px;
@@ -61,6 +74,20 @@
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    color: #000;
+}
+
+.contact-link-desktop {
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    /* seperate for mobile and desktop */
+    width: 40vw;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
     color: #000;
 }
 

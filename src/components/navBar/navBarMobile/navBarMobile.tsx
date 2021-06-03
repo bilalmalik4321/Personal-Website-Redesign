@@ -19,21 +19,25 @@ export const NavBarMobile: React.FC = () => {
     return(
         <ul className="nav-bar-container">
             <li className="mobile-nav-link-container">
-                <Link className="nav-link" to="/" onClick={()=>setHamburgerOpen(false)}>
+                <Link className="nav-link" to="/">
                     <h2 className="mobile-nav-link">Bilal Malik</h2>
                 </Link>
             </li>
             <li>
                 { hamburgerOpen ? (
-                        <Close className="close-padding" onClick={()=>{setHamburgerOpen(false);console.log("pressed")}}/>
+                        <div className="hamburger-icon-padding">
+                            <Close className="hamburger-icon"/>
+                        </div>
                     ):(
-                        <Hamburger className="hamburger-padding" onClick={()=>{setHamburgerOpen(true);console.log("pressed")}}/>
+                        <div className="hamburger-icon-padding">
+                            <Hamburger className="hamburger-icon" onClick={(e)=>{e.stopPropagation();setHamburgerOpen(true);}}/>
+                        </div>
                     )
                 }
             </li>
             { hamburgerOpen && 
             <div className={`modal-component-class`}>
-                <NavBarModal closeHamburger={()=>setHamburgerOpen(false)}/>
+                <NavBarModal/>
             </div>
             }
         </ul>

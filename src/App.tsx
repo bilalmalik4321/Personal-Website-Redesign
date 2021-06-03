@@ -8,37 +8,15 @@
 
 import React from 'react';
 import './App.css';
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import { NavBar } from 'components/navBar/navBar';
-import { HomePage } from 'components/pages/homePage/homePage';
 import { NavBarContext } from 'components/navBar/navBarContext';
-import { AboutPage } from 'components/pages/aboutPage/aboutPage';
-import { Footer } from 'footer';
-import { Experience } from 'components/experience/experience';
+import { Routing } from 'components/routing/routing';
 
 const App: React.FC = () => {
 
   return (
-    <Router>
-      <NavBarContext>
-        <NavBar/>
-      </NavBarContext>
-      <Switch>
-        <Route path="/about-me">
-          <AboutPage/>
-        </Route>
-        <Route path="/experience">
-          <Experience/>
-        </Route>
-        <Route exact path="/">
-          <HomePage/>
-        </Route>
-        <Route>
-          404 Not Found
-        </Route>
-      </Switch>
-      <Footer/>
-    </Router>
+    <NavBarContext>
+      <Routing/>
+    </NavBarContext>
   );
 }
 

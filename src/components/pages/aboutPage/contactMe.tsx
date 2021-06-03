@@ -8,9 +8,14 @@ import EmailIcon from '@material-ui/icons/Email';
 import { ReactComponent as Github } from "images/github.svg";
 import { ReactComponent as Linkedin } from "images/linkedin.svg";
 import 'styles/aboutPage.css';
+import { useWindowSize } from 'useWindowSize';
 import { ContactLink } from './contactLink';
+import { ContactMeDesktop } from './contactMeDesktop';
 
 export const ContactMe: React.FC  = () => {
+
+    const { width } = useWindowSize();
+    // width>750 desktop
 
     const contactLinks = [
         {
@@ -39,11 +44,19 @@ export const ContactMe: React.FC  = () => {
         }
     ];
     
-    return (
-       <div className="contact-me-container">
-           {contactLinks.map((link)=>(
-                <div className="contact-link-container"><ContactLink title={link.title} icon={link.icon} link={link.link} color={link.color} secondaryColor={link.secondaryColor} tertiaryColor={link.tertiaryColor}/></div>)
-            )}
-        </div>
-    );
+    if(width > 750){
+        return <ContactMeDesktop contactLinkObject={contactLinks}/>;
+    }else {
+        return (
+            <div className="contact-me-container">
+                {contactLinks.map((link)=>(
+                     <div className="contact-link-container">
+                             <ContactLink title={link.title} icon={link.icon} link={link.link} color={link.color} secondaryColor={link.secondaryColor} tertiaryColor={link.tertiaryColor}/>
+                     </div>
+                     )
+                 )}
+             </div>
+         );
+    }
+    
 }

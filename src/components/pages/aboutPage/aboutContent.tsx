@@ -12,7 +12,7 @@ export const AboutContent: React.FC  = () => {
     const { width } = useWindowSize();
     
     return (
-        <div className={`${width>750 ? "about-content-container":"about-content-container-mobile"}`}>
+        <div className={`${width>750 ? "about-content-container-desktop":"about-content-container"}`}>
             <h1>
                 Hi, I'm Bilal. A <span className="about-position-text">Full Stack Developer</span> and student at the University of Windsor, enrolled in the Honours Computer Science program.
             </h1>
