@@ -9,8 +9,8 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { NavBar } from 'components/navBar/navBar';
-import { HomePage } from 'components/pages/homePage/homePage';
-import { AboutPage } from 'components/pages/aboutPage/aboutPage';
+import { HomePage } from 'components/home/homePage';
+import { AboutPage } from 'components/about/aboutPage';
 import { Footer } from 'footer';
 import { Experience } from 'components/experience/experience';
 import { useAppContext } from 'appContext';

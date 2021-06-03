@@ -36,7 +36,8 @@
 }
 
 .project-home-box {
-    background-color: grey;
+    border-radius: 8px;
+    background-color: #e6e6e6;
     padding-left: 2vw;
     padding-right: 2vw;
     padding-bottom: 1vh;
