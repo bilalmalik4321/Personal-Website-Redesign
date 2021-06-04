@@ -32,7 +32,7 @@ export const HomeProjects: React.FC  = () => {
         <div className="project-home-container">
             {   projectContents.map((project)=>(
                 <div style={{paddingBottom: '2vh'}}>
-                <ProjectIntro title={project.title} organization={project.organization} description={project.description}/>
+                    <ProjectIntro title={project.title} organization={project.organization} description={project.description}/>
                 </div>
             ))
             } 
