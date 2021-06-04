@@ -6,14 +6,21 @@
  */
 
 import { Header } from "./header";
-import { HeaderProjects } from "./homeProjects/homeProjects";
+import { HomeProjects } from "./homeProjects/homeProjects";
+import { useHomeContext } from "./homeContext";
 import 'styles/homePage.css';
 
 export const HomePage: React.FC  = () => {
+
+    const {projectModal,setProjectModal} = useHomeContext();
+
     return (
-        <>
+        <div onClick={()=>{
+        if(projectModal)setProjectModal(false);
+        }}>
             <Header/>
-            <HeaderProjects/>
-        </>
+            <HomeProjects/>
+
+        </div>
     );
 }

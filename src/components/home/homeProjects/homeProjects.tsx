@@ -7,7 +7,7 @@
 
 import { ProjectIntro } from "./projectIntro";
 
-export const HeaderProjects: React.FC  = () => {
+export const HomeProjects: React.FC  = () => {
     const projectContents = [
         {
             title: "Safe@Work",

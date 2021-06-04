@@ -14,6 +14,7 @@ import { AboutPage } from 'components/about/aboutPage';
 import { Footer } from 'footer';
 import { Experience } from 'components/experience/experience';
 import { useAppContext } from 'appContext';
+import { HomeContext } from 'components/home/homeContext';
 
 export const Routing: React.FC = () => {
 
@@ -33,7 +34,9 @@ const {hamburgerOpen, setHamburgerOpen} = useAppContext();
               <Experience/>
             </Route>
             <Route exact path="/">
-              <HomePage/>
+              <HomeContext>
+                <HomePage/>
+              </HomeContext>
             </Route>
             <Route>
               404 Not Found

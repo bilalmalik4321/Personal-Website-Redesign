@@ -38,9 +38,15 @@
 .project-home-box {
     border-radius: 8px;
     background-color: #e6e6e6;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-bottom: 1vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+
+.project-content-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .check-out-project {
@@ -56,4 +62,11 @@
     cursor: pointer;
 }
 
-
+/* .modal-popup-home-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+} */

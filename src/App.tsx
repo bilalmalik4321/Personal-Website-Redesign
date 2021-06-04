@@ -8,15 +8,15 @@
 
 import React from 'react';
 import './App.css';
-import { NavBarContext } from 'appContext';
+import { AppContext } from 'appContext';
 import { Routing } from 'components/routing/routing';
 
 const App: React.FC = () => {
 
   return (
-    <NavBarContext>
+    <AppContext>
       <Routing/>
-    </NavBarContext>
+    </AppContext>
   );
 }
 

@@ -1,3 +1,6 @@
+import { useHomeContext } from "../homeContext";
+import { ProjectModal } from "./projectModal/projectModal";
+
 /*
 * Author: Bilal Malik
 * Date: May, 10th, 2021
@@ -11,14 +14,20 @@ interface ProjectIntroProps {
 }
 
 export const ProjectIntro: React.FC<ProjectIntroProps>  = (props) => {
+
+    const {projectModal, setProjectModal}=useHomeContext();
     
     return (
         <div className="project-home-box">
-            <div style={{display: "flex",flexDirection:"column"}}>
+            {
+                projectModal && <ProjectModal setProjectModal={setProjectModal}/>
+            }
+            
+            <div className="project-content-container">
                 <h1>{props.title}</h1>
-                <h3>{props.organization}</h3>
-                <h6>{props.description}</h6>
-                <button className="check-out-project">explore</button>
+                <h2>{props.organization}</h2>
+                <h3>{props.description}</h3>
+                <button className="check-out-project" onClick={()=>setProjectModal(true)}>Learn More</button>
             </div>
         </div>
     );

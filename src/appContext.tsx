@@ -12,7 +12,7 @@ const AppContextProvider = createContext<AppContent>({
 
 export const useAppContext = ()=>useContext(AppContextProvider);
 
-export const NavBarContext = (props:React.HTMLAttributes<any>) => {
+export const AppContext = (props:React.HTMLAttributes<any>) => {
 
     const [hamburgerOpen, setHamburgerOpen] = useState<boolean>(false);
 

@@ -9,8 +9,8 @@ import { ReactComponent as Hamburger } from "images/hamburger.svg";
 import { ReactComponent as Close } from "images/close.svg";
 import { useAppContext } from "appContext";
 import { NavBarModal } from "./navBarModal";
-import "styles/navBarMobile.css";
 import { Link } from "react-router-dom";
+import "styles/navBarMobile.css";
 
 export const NavBarMobile: React.FC = () => {
     
@@ -36,7 +36,7 @@ export const NavBarMobile: React.FC = () => {
                 }
             </li>
             { hamburgerOpen && 
-            <div className={`modal-component-class`}>
+            <div className="modal-component-class">
                 <NavBarModal/>
             </div>
             }

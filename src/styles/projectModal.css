@@ -1,0 +1,19 @@
+.project-modal-container {
+    position:fixed;
+    background: #e6e6e6;
+    border-radius: 8px;
+    width: 90%;
+    height: 90%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.project-modal-content-container {
+    padding: 4vw 4vw 4vw 4vw;
+}
+
+.project-modal-close-icon {
+    cursor: pointer;
+}
